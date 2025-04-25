@@ -34,7 +34,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor }) => {
                 {doctor.name}
               </h2>
               <p data-testid="doctor-specialty" className="text-gray-600 mb-1">
-                {doctor.specialty.join(', ')}
+                {doctor.specialty && doctor.specialty.length > 0 ? doctor.specialty.join(', ') : 'General'}
               </p>
               <p className="text-gray-500 mb-1">{doctor.qualification}</p>
               <p data-testid="doctor-experience" className="text-gray-500 mb-2">
