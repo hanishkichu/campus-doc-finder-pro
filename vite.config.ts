@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
   base: '/campus-doc-finder-pro/', // This sets the correct base path for GitHub Pages
   server: {
     host: "::",
-    port: 8080,
+    port: 8087,
   },
   plugins: [
     react(),
