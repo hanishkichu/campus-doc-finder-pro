@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+ Doctor Listing Page – Campus Assessment
+This is a responsive and fully functional Doctor Listing Page built for the Campus Assessment task. The application allows users to search, filter, and sort doctor data using a seamless and dynamic frontend interface.
 
-## Project info
+🚀 Features Implemented
+🔎 Autocomplete Search
+Type to get top 3 matching doctor names.
 
-**URL**: https://lovable.dev/projects/b952f15f-5498-4f7b-9d8a-64c4cae6fc22
+Select a suggestion or hit Enter to filter the list.
 
-## How can I edit this code?
+No suggestions shown if no match is found.
 
-There are several ways of editing your application.
+🧪 Dynamic Filter Panel
+Consultation Type (Radio):
 
-**Use Lovable**
+Video Consult
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b952f15f-5498-4f7b-9d8a-64c4cae6fc22) and start prompting.
+In Clinic
 
-Changes made via Lovable will be committed automatically to this repo.
+Specialties (Multi-Select):
 
-**Use your preferred IDE**
+25+ specialties available based on dataset.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Sort Options:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Fees (ascending)
 
-Follow these steps:
+Experience (descending)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Filters and search work in combination.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+All filter states are synced with URL query parameters.
 
-# Step 3: Install the necessary dependencies.
-npm i
+🧩 Fully Client-Side
+All data is fetched once from the provided API:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+arduino
+Copy
+Edit
+https://srijandubey.github.io/campus-api-mock/SRM-C1-25.json
+Filtering, sorting, and searching are handled entirely on the client side.
 
-**Edit a file directly in GitHub**
+🌐 URL Persistence
+Applied filters reflect as query parameters.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Navigating via browser history retains the filter state.
 
-**Use GitHub Codespaces**
+📦 Tech Stack
+Framework: React.js / Vanilla JS (as applicable)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+CSS: Custom / Tailwind / Bootstrap (based on your implementation)
 
-## What technologies are used for this project?
+Deployment: GitHub Pages / Vercel / Netlify (update if deployed)
 
-This project is built with:
+🧪 Test Case Support
+Implemented all data-testid attributes as per specifications to support test automation.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Example:
 
-## How can I deploy this project?
+html
+Copy
+Edit
+<input data-testid="autocomplete-input" />
+<div data-testid="doctor-card">
+  <h3 data-testid="doctor-name">Dr. Jane Doe</h3>
+  <p data-testid="doctor-specialty">Cardiologist</p>
+  <span data-testid="doctor-experience">12 years</span>
+  <span data-testid="doctor-fee">₹500</span>
+</div>
+Full list of data-testids supported: ✅
+Autocomplete, doctor card, filters (specialties, consultation type), sort options, etc.
 
-Simply open [Lovable](https://lovable.dev/projects/b952f15f-5498-4f7b-9d8a-64c4cae6fc22) and click on Share -> Publish.
+📄 Final Submission
+📌 Make sure to fill out the final submission form after deployment and testing:
+🔗 Final Submission Form
 
-## Can I connect a custom domain to my Lovable project?
+📸 Sample UI Reference
+A sample UI image was provided in the assessment for design guidance. This project prioritizes functionality over pixel-perfect UI.
 
-Yes, you can!
+✅ To Run Locally
+bash
+Copy
+Edit
+git clone https://github.com/your-username/doctor-listing.git
+cd doctor-listing
+npm install
+npm start
+Or if using plain HTML/CSS/JS, simply open index.html in a browser.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🧼 Notes
+No backend interaction after initial API fetch.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+No advanced UX features like "Clear All" or collapsible filters (as specified).
+
+All code is written with simplicity, clarity, and maintainability in mind.
+
+💡 Author
+Created by [hanish] for the Campus Assessment Challenge.
