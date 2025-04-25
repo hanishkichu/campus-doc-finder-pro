@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/campus-doc-finder-pro/', // Add this line with your repository name
+  base: '/campus-doc-finder-pro/', // This sets the correct base path for GitHub Pages
   server: {
     host: "::",
     port: 8080,
